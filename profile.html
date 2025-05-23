@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile - E-Voting</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="profile-container">
+    <h2>My Profile</h2>
+
+    <div class="profile-card">
+      <div class="profile-header">
+        <div class="avatar">👤</div>
+        <div class="user-info">
+          <h3>John Doe</h3>
+          <p>Roll No: CS12345</p>
+        </div>
+      </div>
+
+      <div class="profile-details">
+        <p><strong>Email</strong><br>john.doe@college.edu</p>
+        <p><strong>Semester</strong><br>5th Semester</p>
+
+        <p><strong>Elections Voted</strong></p>
+        <div class="voted-box">Class Representative Election</div>
+        <div class="voted-box">Student Council Election</div>
+
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <div>🕒<br>Running</div>
+    <div>🗳<br>Past</div>
+    <div class="active">👤<br>Profile</div>
+  </div>
+
+  <script>
+    function logout() {
+      window.location.href = "logout.php"; // or login.html for now
+    }
+  </script>
+</body>
+</html>

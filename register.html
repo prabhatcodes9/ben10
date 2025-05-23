@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+  <div class="container">
+    <form id="registrationForm" action="/Api/register.php" method="post">
+      <h2>Student Registration</h2>
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="your.name@college.edu" required>
+      <input type="text" id="roll" placeholder="e.g. IITP002599" pattern="^IITP\d{6}$" required>
+
+      <select id="semester" required>
+        <option value="" disabled selected>Select your semester</option>
+        <option value="1">1st</option>
+        <option value="2">2nd</option>
+        <option value="3">3rd</option>
+        <option value="4">4th</option>
+        <option value="5">5th</option>
+        <option value="6">6th</option>
+        <option value="7">7th</option>
+        <option value="8">8th</option>
+      </select>
+
+      <input type="password" id="password" placeholder="Create a strong password" required>
+      <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+
+      <button type="submit">Register</button>
+      <p class="login-link">Already have an account? <a href="/index.html">Login</a></p>
+    </form>
+  </div>
+
+  <script src="register.js"></script>
+</body>
+</html>
+

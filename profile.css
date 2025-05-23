@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f1f4f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-container {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  padding-left: 16px;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #6b5bff, #a855f7);
+  padding: 20px;
+  color: white;
+}
+
+.avatar {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.user-info p {
+  margin: 2px 0 0;
+}
+
+.profile-details {
+  padding: 20px;
+  background: white;
+}
+
+.profile-details p {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.voted-box {
+  background: #eef2ff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.logout-btn {
+  background-color: #e11d48;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.bottom-nav div {
+  text-align: center;
+  color: #888;
+}
+
+.bottom-nav .active {
+  color: #7c3aed;
+}
